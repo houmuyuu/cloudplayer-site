@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CloudPlayer プライバシーポリシー</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Yu Gothic UI", sans-serif; line-height: 1.7; margin: 0; color: #1b1c1c; background: #f7faf9; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+  h1 { color: #00585a; font-size: 1.5rem; }
+  h2 { margin-top: 28px; font-size: 1.1rem; }
+  a { color: #00585a; }
+  .meta { color: #555; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>CloudPlayer プライバシーポリシー</h1>
+  <p class="meta">制定日: 2026年10月29日 ・ <a href="index.html">CloudPlayer のホームページ</a></p>
+
+  <p>
+    CloudPlayer(以下「本アプリ」)は、Google ドライブに置いた音楽を再生するための個人用の Android アプリです。
+    本アプリが扱う情報と、その扱い方を説明します。
+  </p>
+
+  <h2>1. Google ドライブのデータ</h2>
+  <ul>
+    <li>本アプリは、Google ドライブの読み取り専用の権限(<code>drive.readonly</code>)を使い、利用者が選んだフォルダにある音楽ファイルと、その名前・大きさ・更新日時などの情報を読み込みます。</li>
+    <li>読み込んだ情報は、曲の一覧・再生・ダウンロード・歌詞の表示・曲の解析のためだけに、利用者の端末の中で使います。</li>
+    <li>ドライブのファイルを書き換えたり、消したり、共有したりはしません。</li>
+    <li>Google ドライブから得たデータを、本アプリの開発者や第三者のサーバーへ送ることはありません。広告や販売、利用者の追跡には使いません。</li>
+  </ul>
+
+  <h2>2. 端末に保存する情報</h2>
+  <ul>
+    <li>曲の一覧と曲の情報、ダウンロードした音楽ファイル、プレイリスト、お気に入り、評価、再生の履歴、曲の解析結果、設定は、利用者の端末の中に保存します。</li>
+    <li>曲の解析(雰囲気やテンポの推定)は端末の中で行い、結果を外部へ送りません。</li>
+    <li>Android の自動バックアップを有効にしている場合、上の情報の一部(ダウンロードした音楽ファイルを除く)は、Android の仕組みにより利用者自身の Google アカウントにバックアップされることがあります。位置や天気の情報はバックアップの対象から外しています。</li>
+    <li>本アプリを端末から削除すると、端末に保存した情報も消えます。</li>
+  </ul>
+
+  <h2>3. 外部のサービスに送る情報</h2>
+  <ul>
+    <li><strong>天気(Open-Meteo)</strong>: 「天気を使う」がオンで、おおよその位置の利用を許可した場合だけ、端末のおおよその位置を小数第 1 位(約 10 km)に丸めて <a href="https://open-meteo.com/">Open-Meteo</a> に送り、今の天気を受け取ります。位置は保存せず、送るのは丸めた値だけです。設定でいつでもオフにできます。</li>
+    <li><strong>歌詞(LRCLIB)</strong>: 歌詞を探すときに、曲名・アーティスト名・アルバム名・曲の長さを <a href="https://lrclib.net/">LRCLIB</a> に送ります。</li>
+    <li><strong>Google</strong>: Google アカウントでのログインと Google ドライブの読み込みのために、Google のサービスと通信します。</li>
+  </ul>
+  <p>上記のほかに、広告や分析のためのサービスは使っていません。</p>
+
+  <h2>4. Google API サービスのユーザーデータに関するポリシー</h2>
+  <p>
+    本アプリが Google API から受け取った情報の使用と他のアプリへの転送は、
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>
+    (Limited Use の要件を含む)に従います。
+  </p>
+
+  <h2>5. 権限の取り消し</h2>
+  <p>
+    Google アカウントの<a href="https://myaccount.google.com/permissions">サードパーティのアクセス</a>の画面から、
+    いつでも本アプリへのアクセスを取り消せます。位置の許可は、Android の設定から取り消せます。
+  </p>
+
+  <h2>6. このポリシーの変更</h2>
+  <p>内容を変えるときは、このページを更新し、制定日の横に更新日を記します。</p>
+
+  <h2>7. お問い合わせ</h2>
+  <p>
+    <a href="https://github.com/houmuyuu/cloudplayer-site/issues">GitHub の Issues</a> からお知らせください。<br>
+    開発: houmuyuu
+  </p>
+</main>
+</body>
+</html>

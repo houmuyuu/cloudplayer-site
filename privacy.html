@@ -16,7 +16,7 @@
 <body>
 <main>
   <h1>CloudPlayer プライバシーポリシー</h1>
-  <p class="meta">制定日: 2026年10月29日 ・ 更新日: 2026年10月31日(Google ドライブへのバックアップを追加) ・ <a href="index.html">CloudPlayer のホームページ</a></p>
+  <p class="meta">制定日: 2026年10月29日 ・ 更新日: 2026年11月1日(歌詞ファイルの保存・タグの書き込み・ジャケットの検索を追加) ・ <a href="index.html">CloudPlayer のホームページ</a></p>
 
   <p>
     CloudPlayer(以下「本アプリ」)は、Google ドライブに置いた音楽を再生するための個人用の Android アプリです。
@@ -27,7 +27,15 @@
   <ul>
     <li>本アプリは、Google ドライブの読み取り専用の権限(<code>drive.readonly</code>)を使い、利用者が選んだフォルダにある音楽ファイルと、その名前・大きさ・更新日時などの情報を読み込みます。</li>
     <li>読み込んだ情報は、曲の一覧・再生・ダウンロード・歌詞の表示・曲の解析のためだけに、利用者の端末の中で使います。</li>
-    <li>音楽ファイルなど、ドライブにある利用者のファイルを書き換えたり、消したり、共有したりはしません。</li>
+    <li>
+      <strong>ドライブへの書き込み</strong>: 利用者が次の操作をしたときに限り、Google ドライブ全体の読み書きの権限(<code>drive</code>)を追加で求め、次の目的だけに使います。
+      ふだんの同期・再生・ダウンロードでは、引き続き読み取り専用の権限だけを使います。
+      <ul>
+        <li>「Drive に .lrc を保存」: 編集した歌詞を、その曲と同じフォルダに歌詞ファイル(.lrc)として作成または更新します。</li>
+        <li>「タグを編集」: 編集した曲名・アーティスト・アルバム・番号・年・ジャンル・ジャケットを、アプリで同期しているフォルダの中の元の曲のファイル(FLAC と MP3)に書き込みます。書き換える前の内容は、約 30 日間 Google ドライブの版の履歴に残ります。</li>
+      </ul>
+      これ以外のファイルの作成・変更・削除・共有には使いません。
+    </li>
     <li>
       <strong>バックアップ</strong>: 本アプリは、Google ドライブのアプリ専用領域の権限(<code>drive.appdata</code>)も使います。
       アプリ内で作ったプレイリスト・グループ・お気に入り・評価・再生の履歴・Web から取得した歌詞・曲の解析結果・設定・同期するフォルダの控え(バックアップ)を、
@@ -52,7 +60,8 @@
   <ul>
     <li><strong>天気(Open-Meteo)</strong>: 「天気を使う」がオンで、おおよその位置の利用を許可した場合だけ、端末のおおよその位置を小数第 1 位(約 10 km)に丸めて <a href="https://open-meteo.com/">Open-Meteo</a> に送り、今の天気を受け取ります。位置は保存せず、送るのは丸めた値だけです。設定でいつでもオフにできます。</li>
     <li><strong>歌詞(LRCLIB)</strong>: 歌詞を探すときに、曲名・アーティスト名・アルバム名・曲の長さを <a href="https://lrclib.net/">LRCLIB</a> に送ります。</li>
-    <li><strong>Google</strong>: Google アカウントでのログイン、Google ドライブの読み込み、利用者自身の Google ドライブのアプリ専用領域へのバックアップのために、Google のサービスと通信します。</li>
+    <li><strong>ジャケットの検索(iTunes Search API・MusicBrainz・Cover Art Archive)</strong>: 利用者がジャケットを探したときだけ、入力されたアルバム名とアーティスト名を、画像の候補を探すために Apple の <a href="https://performance-partners.apple.com/search-api">iTunes Search API</a>(itunes.apple.com)と <a href="https://musicbrainz.org/">MusicBrainz</a>(musicbrainz.org)に送ります。候補の画像は、Apple の画像サーバーと <a href="https://coverartarchive.org/">Cover Art Archive</a>(画像は archive.org から配信)から取得します。アカウント・曲のファイル・位置などのほかの情報は送りません。</li>
+    <li><strong>Google</strong>: Google アカウントでのログイン、Google ドライブの読み込み、利用者自身の Google ドライブのアプリ専用領域へのバックアップ、上に書いた歌詞ファイルの保存とタグの書き込みのために、Google のサービスと通信します。</li>
   </ul>
   <p>上記のほかに、広告や分析のためのサービスは使っていません。</p>
 
